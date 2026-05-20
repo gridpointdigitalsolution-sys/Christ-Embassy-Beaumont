@@ -139,6 +139,12 @@ function openLightbox(el) {
 - Counter animation on stats section
 - Threshold: 0.15
 
+### 9. Iframe Lazy Loading (Performance)
+- All 10 iframes use `data-src` instead of `src`
+- `IntersectionObserver` loads them when 200px from viewport
+- Massively improves initial page load speed
+- Iframes load seamlessly before user scrolls to them
+
 ---
 
 ## External Dependencies (10 Iframes)
@@ -210,7 +216,7 @@ python -m http.server 8080
 
 1. **Large video files:** video-6.mp4 (56MB) and video-7.mp4 (51MB) exceed GitHub's 50MB recommendation. Consider Git LFS if repo grows.
 
-2. **External image dependency:** Pastor Chris photo loaded from `christembassy.org` - could break if their site changes. Consider downloading locally.
+2. **Pastor Chris image:** Now stored locally as `pastor-chris.png` (previously loaded from christembassy.org).
 
 3. **Single-file architecture:** At ~1600+ lines, index.html is large. If major features are added, consider splitting CSS/JS into separate files.
 
