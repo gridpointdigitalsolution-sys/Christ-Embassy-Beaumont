@@ -308,6 +308,44 @@ img{max-width:100%;height:auto}
 .video-wrap a:hover{color:var(--ce-gold)}
 
 /* MINISTRIES */
+/* RHAPSODY SECTION */
+.rhapsody-section{padding:clamp(60px,10vw,100px) 20px;background:linear-gradient(135deg,#0a1540 0%,var(--ce-royal) 50%,#1a3a8a 100%);position:relative;overflow:hidden}
+.rhapsody-section::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(201,168,76,.08),transparent 60%);pointer-events:none}
+.rhapsody-inner{display:grid;grid-template-columns:1fr 1fr;gap:50px;max-width:1100px;margin:0 auto;align-items:center;position:relative;z-index:2}
+.rhapsody-text h2{color:var(--ce-white);font-size:clamp(1.8rem,3vw,2.5rem);margin-bottom:20px}
+.rhapsody-text h2 span{color:var(--ce-gold)}
+.rhapsody-text p{color:rgba(255,255,255,.8);font-size:1rem;line-height:1.8;margin-bottom:25px}
+.rhapsody-stats{display:flex;gap:30px;margin-bottom:30px;flex-wrap:wrap}
+.rhapsody-stat{text-align:center}
+.rhapsody-stat strong{display:block;color:var(--ce-gold);font-size:1.5rem;font-family:'Playfair Display',serif}
+.rhapsody-stat span{color:rgba(255,255,255,.6);font-size:.75rem;letter-spacing:.5px}
+.rhapsody-links{display:flex;gap:12px;flex-wrap:wrap}
+.rhapsody-link{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:50px;font-weight:700;font-size:.85rem;transition:all .3s;cursor:pointer;text-decoration:none}
+.rhapsody-link.primary{background:linear-gradient(135deg,var(--ce-gold),var(--ce-gold-lt));color:var(--ce-royal)}
+.rhapsody-link.primary:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(201,168,76,.4)}
+.rhapsody-link.secondary{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);color:var(--ce-white)}
+.rhapsody-link.secondary:hover{background:rgba(255,255,255,.2);transform:translateY(-2px)}
+.rhapsody-embed{border-radius:16px;overflow:hidden;box-shadow:0 10px 50px rgba(0,0,0,.3);background:var(--ce-white)}
+.rhapsody-embed iframe{width:100%;height:520px;border:none;display:block}
+@media(max-width:768px){.rhapsody-inner{grid-template-columns:1fr}.rhapsody-embed iframe{height:450px}}
+@media(max-width:480px){.rhapsody-embed iframe{height:400px}}
+
+/* KIDS SECTION */
+.kids-section{padding:clamp(60px,10vw,100px) 20px;background:linear-gradient(135deg,#FFF8E7,#FFF3D0,#FFF8E7);position:relative;overflow:hidden}
+.kids-section::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 80% 20%,rgba(245,200,66,.15),transparent 50%);pointer-events:none}
+.kids-inner{display:grid;grid-template-columns:1fr 1fr;gap:40px;max-width:1100px;margin:0 auto;align-items:center;position:relative;z-index:2}
+.kids-text h2{color:var(--ce-royal);font-size:clamp(1.8rem,3vw,2.5rem);margin-bottom:15px}
+.kids-text h2 span{color:var(--ce-gold)}
+.kids-text p{color:#444;font-size:1rem;line-height:1.8;margin-bottom:20px}
+.kids-features{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:25px}
+.kids-feature{display:flex;align-items:center;gap:10px;background:var(--ce-white);padding:12px 16px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.05);font-size:.85rem;font-weight:600;color:var(--ce-royal)}
+.kids-feature svg{flex-shrink:0}
+.kids-links{display:flex;gap:12px;flex-wrap:wrap}
+.kids-embed{border-radius:16px;overflow:hidden;box-shadow:0 10px 50px rgba(26,46,122,.12);background:var(--ce-white)}
+.kids-embed iframe{width:100%;height:480px;border:none;display:block}
+@media(max-width:768px){.kids-inner{grid-template-columns:1fr}.kids-embed iframe{height:400px}.kids-features{grid-template-columns:1fr}}
+@media(max-width:480px){.kids-embed iframe{height:350px}}
+
 .ministries-section{padding:clamp(60px,10vw,100px) 20px;background:var(--ce-bg)}
 .ministry-card .card-icon svg{width:28px;height:28px;fill:var(--ce-royal)}
 
@@ -511,7 +549,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
 .gallery-item:nth-child(1),.gallery-item:nth-child(4){grid-column:span 2}
 .counters-grid{grid-template-columns:repeat(2,1fr);gap:30px}
 .counter-item:not(:last-child)::after{display:none}
-.service-section,.counters,.slideshow-section,.video-section,.ministries-section,.gallery-section,.faith-section,.connect-section,.about-section,.pastor-section,.pchr-section{padding:50px 20px}
+.service-section,.counters,.slideshow-section,.video-section,.ministries-section,.gallery-section,.faith-section,.connect-section,.about-section,.pastor-section,.pchr-section,.rhapsody-section,.kids-section{padding:50px 20px}
 .full-banner{min-height:250px}
 .give-float{bottom:170px}
 .section-title{margin-bottom:40px}
@@ -555,7 +593,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
 .pastor-img-wrap{width:170px;height:170px}
 .pastor-card h3{font-size:1.1rem}
 .pastor-card .pastor-quote{font-size:.78rem}
-.service-section,.counters,.slideshow-section,.video-section,.ministries-section,.gallery-section,.faith-section,.connect-section,.about-section,.pastor-section,.pchr-section{padding:40px 15px}
+.service-section,.counters,.slideshow-section,.video-section,.ministries-section,.gallery-section,.faith-section,.connect-section,.about-section,.pastor-section,.pchr-section,.rhapsody-section,.kids-section{padding:40px 15px}
 .card{padding:25px 20px}
 .section-title{font-size:1.4rem;margin-bottom:30px}
 .resources-grid{grid-template-columns:1fr}
@@ -889,6 +927,51 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 </div>
 <div class="video-wrap" style="border-radius:16px;overflow:hidden;box-shadow:0 4px 25px rgba(26,46,122,.12)">
 <video src="media/video-6.mp4" controls preload="metadata" poster="media/optimized/watching-pastor-chris.jpg" style="width:100%;display:block;border-radius:16px" loading="lazy"></video>
+</div>
+</div>
+</section>
+
+<!-- RHAPSODY OF REALITIES -->
+<section class="rhapsody-section reveal">
+<div class="rhapsody-inner">
+<div class="rhapsody-text">
+<h2>Rhapsody of <span>Realities</span></h2>
+<p>The world's most distributed daily devotional by Pastor Chris Oyakhilome. Available in over 8,123 languages, transforming lives daily with the Word of God since 2001.</p>
+<div class="rhapsody-stats">
+<div class="rhapsody-stat"><strong>6.5B+</strong><span>Copies Distributed</span></div>
+<div class="rhapsody-stat"><strong>8,123</strong><span>Languages</span></div>
+<div class="rhapsody-stat"><strong>242</strong><span>Countries</span></div>
+</div>
+<div class="rhapsody-links">
+<a href="https://read.rhapsodyofrealities.org" target="_blank" class="rhapsody-link primary">&#128214; Read Today's Devotional</a>
+<a href="https://rhapsodyofrealities.org" target="_blank" class="rhapsody-link secondary">Download App &rarr;</a>
+</div>
+</div>
+<div class="rhapsody-embed">
+<iframe src="https://read.rhapsodyofrealities.org" title="Rhapsody of Realities Daily Devotional" loading="lazy" allow="fullscreen"></iframe>
+</div>
+</div>
+</section>
+
+<!-- LOVEWORLD KIDS -->
+<section class="kids-section reveal">
+<div class="kids-inner">
+<div class="kids-embed">
+<iframe src="https://lovetoons.org" title="Lovetoons TV - LoveWorld Kids Christian Content" loading="lazy" allow="fullscreen"></iframe>
+</div>
+<div class="kids-text">
+<h2>LoveWorld <span>Kids</span></h2>
+<p>Raising champions and influencing tomorrow! LoveWorld Children's Ministry nurtures children from birth to 12 years with God's Word through fun, interactive, and Spirit-filled content.</p>
+<div class="kids-features">
+<div class="kids-feature"><svg viewBox="0 0 24 24" width="20" height="20" fill="#C9A84C"><path d="M21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v2h8v-2h5c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 14H3V5h18v12z"/></svg> Lovetoons TV</div>
+<div class="kids-feature"><svg viewBox="0 0 24 24" width="20" height="20" fill="#C9A84C"><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM9 4h2v5l-1-.75L9 9V4z"/></svg> Bible Stories</div>
+<div class="kids-feature"><svg viewBox="0 0 24 24" width="20" height="20" fill="#C9A84C"><path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3z"/></svg> Kids Church</div>
+<div class="kids-feature"><svg viewBox="0 0 24 24" width="20" height="20" fill="#C9A84C"><circle cx="12" cy="12" r="10"/></svg> Games &amp; Comics</div>
+</div>
+<div class="kids-links">
+<a href="https://lovetoons.org" target="_blank" class="rhapsody-link primary">&#127912; Watch Lovetoons TV</a>
+<a href="https://loveworldchildrensministry.org" target="_blank" class="rhapsody-link secondary">Kids Ministry &rarr;</a>
+</div>
 </div>
 </div>
 </section>
