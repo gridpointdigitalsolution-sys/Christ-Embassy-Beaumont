@@ -116,6 +116,7 @@ img{max-width:100%;height:auto}
 .mobile-menu.open a:nth-child(2){transition-delay:.2s}
 .mobile-menu.open a:nth-child(3){transition-delay:.3s}
 .mobile-menu.open a:nth-child(4){transition-delay:.4s}
+.mobile-menu.open a:nth-child(5){transition-delay:.5s}
 .mobile-menu a:hover{color:var(--ce-gold)}
 
 /* TICKER */
@@ -345,6 +346,51 @@ img{max-width:100%;height:auto}
 .kids-embed iframe{width:100%;height:480px;border:none;display:block}
 @media(max-width:768px){.kids-inner{grid-template-columns:1fr}.kids-embed iframe{height:400px}.kids-features{grid-template-columns:1fr}}
 @media(max-width:480px){.kids-embed iframe{height:350px}}
+
+/* RHAPSODY PAGE */
+.rhap-hero{min-height:50vh;background:linear-gradient(135deg,#0a1540 0%,var(--ce-royal) 40%,#1a3a8a 100%);display:flex;align-items:center;justify-content:center;text-align:center;padding:clamp(80px,12vw,120px) 20px 60px;position:relative;overflow:hidden}
+.rhap-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 80%,rgba(201,168,76,.1),transparent 60%);pointer-events:none}
+.rhap-hero-content{position:relative;z-index:2;max-width:800px}
+.rhap-hero h1{color:var(--ce-white);font-size:clamp(2rem,4vw,3.2rem);margin-bottom:15px}
+.rhap-hero h1 span{color:var(--ce-gold)}
+.rhap-hero p{color:rgba(255,255,255,.75);font-size:clamp(.95rem,1.5vw,1.15rem);line-height:1.8;margin-bottom:30px;max-width:650px;margin-left:auto;margin-right:auto}
+.rhap-hero-stats{display:flex;justify-content:center;gap:clamp(20px,4vw,50px);flex-wrap:wrap}
+.rhap-hero-stat{text-align:center}
+.rhap-hero-stat strong{display:block;color:var(--ce-gold);font-size:clamp(1.5rem,3vw,2.2rem);font-family:'Playfair Display',serif}
+.rhap-hero-stat span{color:rgba(255,255,255,.5);font-size:.75rem;letter-spacing:.5px;text-transform:uppercase}
+.rhap-tab-section{padding:clamp(40px,6vw,60px) 20px;background:var(--ce-bg)}
+.rhap-tabs{display:flex;justify-content:center;gap:8px;max-width:700px;margin:0 auto 40px;flex-wrap:wrap}
+.rhap-tab{padding:12px 28px;border-radius:50px;font-weight:700;font-size:.9rem;cursor:pointer;border:2px solid rgba(26,46,122,.15);background:var(--ce-white);color:var(--ce-royal);transition:all .3s}
+.rhap-tab.active,.rhap-tab:hover{background:var(--ce-royal);color:var(--ce-white);border-color:var(--ce-royal);box-shadow:0 4px 20px rgba(26,46,122,.2)}
+.rhap-tab-content{display:none;max-width:1100px;margin:0 auto}
+.rhap-tab-content.active{display:block}
+.rhap-embed-full{border-radius:20px;overflow:hidden;box-shadow:0 10px 50px rgba(0,0,0,.1);background:var(--ce-white);margin-bottom:30px}
+.rhap-embed-full iframe{width:100%;height:650px;border:none;display:block}
+.rhap-info-row{display:grid;grid-template-columns:1fr 1fr;gap:25px;max-width:1100px;margin:0 auto 40px}
+.rhap-info-card{background:var(--ce-white);border-radius:16px;padding:30px;box-shadow:0 4px 20px rgba(0,0,0,.05);border:1px solid rgba(0,0,0,.04)}
+.rhap-info-card h3{color:var(--ce-royal);font-size:1.2rem;margin-bottom:12px;display:flex;align-items:center;gap:10px}
+.rhap-info-card p{color:#555;font-size:.9rem;line-height:1.8;margin-bottom:15px}
+.rhap-info-card .rhapsody-link{font-size:.8rem;padding:10px 20px}
+.rhap-kingschat{padding:clamp(60px,10vw,80px) 20px;background:linear-gradient(135deg,#1B5E20,#2E7D32,#43A047);position:relative;overflow:hidden}
+.rhap-kingschat::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 70% 30%,rgba(255,255,255,.05),transparent 50%);pointer-events:none}
+.rhap-kc-inner{display:grid;grid-template-columns:1fr 1fr;gap:50px;max-width:1100px;margin:0 auto;align-items:center;position:relative;z-index:2}
+.rhap-kc-text h2{color:var(--ce-white);font-size:clamp(1.8rem,3vw,2.5rem);margin-bottom:15px}
+.rhap-kc-text h2 span{color:#A5D6A7}
+.rhap-kc-text p{color:rgba(255,255,255,.8);font-size:1rem;line-height:1.8;margin-bottom:20px}
+.rhap-kc-features{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:25px}
+.rhap-kc-feat{display:flex;align-items:center;gap:8px;color:rgba(255,255,255,.9);font-size:.85rem;font-weight:600}
+.rhap-kc-feat svg{flex-shrink:0}
+.rhap-kc-embed{border-radius:16px;overflow:hidden;box-shadow:0 10px 50px rgba(0,0,0,.3);background:var(--ce-white)}
+.rhap-kc-embed iframe{width:100%;height:520px;border:none;display:block}
+.rhap-apps{padding:clamp(60px,10vw,80px) 20px;background:var(--ce-white);text-align:center}
+.rhap-apps-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;max-width:900px;margin:30px auto 0}
+.rhap-app-card{background:var(--ce-bg);border-radius:16px;padding:30px 20px;text-align:center;transition:all .3s;border:1px solid rgba(0,0,0,.04)}
+.rhap-app-card:hover{transform:translateY(-5px);box-shadow:0 10px 30px rgba(0,0,0,.1)}
+.rhap-app-card h4{color:var(--ce-royal);margin:12px 0 8px;font-size:1rem}
+.rhap-app-card p{color:#666;font-size:.8rem;line-height:1.6;margin-bottom:15px}
+.rhap-app-card .app-icon{width:60px;height:60px;border-radius:14px;margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:1.8rem}
+@media(max-width:768px){.rhap-info-row{grid-template-columns:1fr}.rhap-kc-inner{grid-template-columns:1fr}.rhap-embed-full iframe{height:500px}.rhap-kc-embed iframe{height:420px}.rhap-kc-features{grid-template-columns:1fr}}
+@media(max-width:480px){.rhap-embed-full iframe{height:400px}.rhap-kc-embed iframe{height:350px}}
 
 .ministries-section{padding:clamp(60px,10vw,100px) 20px;background:var(--ce-bg)}
 .ministry-card .card-icon svg{width:28px;height:28px;fill:var(--ce-royal)}
@@ -647,6 +693,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 <div class="nav-links">
 <a href="#home" class="nav-link active" data-page="home">Home</a>
 <a href="#about" class="nav-link" data-page="about">About</a>
+<a href="#rhapsody" class="nav-link" data-page="rhapsody">Rhapsody</a>
 <a href="#" class="nav-link" onclick="event.preventDefault();goToContact();">Contact</a>
 </div>
 <a href="tel:+17808074622" class="nav-cta desktop-cta">Join Us Sunday ✝</a>
@@ -659,6 +706,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 <div class="mobile-menu" id="mobileMenu">
 <a href="#home" onclick="switchPage('home');toggleMobile()">Home</a>
 <a href="#about" onclick="switchPage('about');toggleMobile()">About</a>
+<a href="#rhapsody" onclick="switchPage('rhapsody');toggleMobile()">Rhapsody</a>
 <a href="#" onclick="event.preventDefault();toggleMobile();goToContact();">Contact</a>
 <a href="tel:+17808074622" class="btn-gold" style="padding:14px 28px;border-radius:50px;margin-top:20px;font-size:1rem">Join Us Sunday</a>
 </div>
@@ -1258,6 +1306,145 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 
 </div>
 
+<!-- RHAPSODY PAGE -->
+<div class="page" id="rhapsody-page">
+
+<!-- RHAPSODY HERO -->
+<section class="rhap-hero">
+<div class="rhap-hero-content">
+<h1>Rhapsody of <span>Realities</span></h1>
+<p>The world's #1 daily devotional by Pastor Chris Oyakhilome. Available for Adults, Teens &amp; Kids &mdash; transforming lives daily with the Word of God since 2001.</p>
+<div class="rhap-hero-stats">
+<div class="rhap-hero-stat"><strong>6.5B+</strong><span>Copies Distributed</span></div>
+<div class="rhap-hero-stat"><strong>8,123</strong><span>Languages</span></div>
+<div class="rhap-hero-stat"><strong>242</strong><span>Countries</span></div>
+<div class="rhap-hero-stat"><strong>Since 2001</strong><span>Transforming Lives</span></div>
+</div>
+</div>
+</section>
+
+<!-- RHAPSODY TABS -->
+<section class="rhap-tab-section">
+<div class="rhap-tabs">
+<button class="rhap-tab active" onclick="switchRhapTab('adults',this)">&#128214; Adults</button>
+<button class="rhap-tab" onclick="switchRhapTab('teens',this)">&#127775; Teens (TeeVo)</button>
+<button class="rhap-tab" onclick="switchRhapTab('kids',this)">&#127912; Kids</button>
+</div>
+
+<!-- ADULTS TAB -->
+<div class="rhap-tab-content active" id="rhap-adults">
+<div class="rhap-embed-full">
+<iframe src="https://read.rhapsodyofrealities.org" title="Rhapsody of Realities - Today's Daily Devotional" loading="lazy"></iframe>
+</div>
+<div class="rhap-info-row">
+<div class="rhap-info-card">
+<h3>&#128218; About Rhapsody</h3>
+<p>Rhapsody of Realities is a life-transforming daily devotional authored by Pastor Chris Oyakhilome. With over 6.5 billion copies distributed worldwide, it is the most translated, most distributed, and most read devotional in the world.</p>
+<a href="https://rhapsodyofrealities.org" target="_blank" class="rhapsody-link primary">Visit Official Site &rarr;</a>
+</div>
+<div class="rhap-info-card">
+<h3>&#128241; Download the App</h3>
+<p>Get the Rhapsody of Realities App 4.0 for a complete daily devotional experience. Switch between Kids, Teen, and Adult content seamlessly. Available on iOS and Android.</p>
+<a href="https://play.google.com/store/apps/details?id=com.rhapsodyreader" target="_blank" class="rhapsody-link primary">Get on Google Play &rarr;</a>
+</div>
+</div>
+</div>
+
+<!-- TEENS TAB -->
+<div class="rhap-tab-content" id="rhap-teens">
+<div class="rhap-embed-full">
+<iframe src="https://www.teevotogo.org" title="Rhapsody of Realities TeeVo - Daily Devotional for Teens" loading="lazy"></iframe>
+</div>
+<div class="rhap-info-row">
+<div class="rhap-info-card">
+<h3>&#127775; What is TeeVo?</h3>
+<p>Rhapsody of Realities TeeVo is specially designed to inspire and encourage teenagers and young adults. It provides practical, scripture-based answers to pressing questions on identity, peer pressure, career, and more.</p>
+<a href="https://www.teevotogo.org" target="_blank" class="rhapsody-link primary">Read TeeVo &rarr;</a>
+</div>
+<div class="rhap-info-card">
+<h3>&#127911; TeeVo Audio</h3>
+<p>Listen to daily TeeVo devotionals on the go with the audio version. Perfect for teens who want to engage with God's Word during commutes, workouts, or study breaks.</p>
+<a href="https://www.teevotogo.org/audio/" target="_blank" class="rhapsody-link primary">Listen Now &rarr;</a>
+</div>
+</div>
+</div>
+
+<!-- KIDS TAB -->
+<div class="rhap-tab-content" id="rhap-kids">
+<div class="rhap-embed-full">
+<iframe src="https://lovetoons.org" title="Lovetoons TV - LoveWorld Kids Christian Content" loading="lazy"></iframe>
+</div>
+<div class="rhap-info-row">
+<div class="rhap-info-card">
+<h3>&#127912; Lovetoons TV</h3>
+<p>Safe Christian cartoons, Bible-based kids shows, and educational programs. Lovetoons TV is an online Christian channel for kids of all ages, featuring unlimited on-demand videos, Live TV, games, and comics.</p>
+<a href="https://lovetoons.org" target="_blank" class="rhapsody-link primary">Watch Lovetoons &rarr;</a>
+</div>
+<div class="rhap-info-card">
+<h3>&#128218; Kids Ministry</h3>
+<p>LoveWorld Children's Ministry nurtures children from birth to 12 years with God's Word. Raising champions and influencing tomorrow through fun, interactive, Spirit-filled programs.</p>
+<a href="https://loveworldchildrensministry.org" target="_blank" class="rhapsody-link primary">Visit Kids Ministry &rarr;</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- KINGSCHAT -->
+<section class="rhap-kingschat reveal">
+<div class="rhap-kc-inner">
+<div class="rhap-kc-text">
+<h2>Connect on <span>KingsChat</span></h2>
+<p>KingsChat is the official social and messaging platform of Believers' LoveWorld. Join millions of believers worldwide to share testimonies, fellowship, and engage with daily Rhapsody content.</p>
+<div class="rhap-kc-features">
+<div class="rhap-kc-feat"><svg viewBox="0 0 24 24" width="18" height="18" fill="#A5D6A7"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg> Free Messaging</div>
+<div class="rhap-kc-feat"><svg viewBox="0 0 24 24" width="18" height="18" fill="#A5D6A7"><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/></svg> HD Video Calls</div>
+<div class="rhap-kc-feat"><svg viewBox="0 0 24 24" width="18" height="18" fill="#A5D6A7"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3z"/></svg> Groups &amp; Fellowship</div>
+<div class="rhap-kc-feat"><svg viewBox="0 0 24 24" width="18" height="18" fill="#A5D6A7"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg> Social Timeline</div>
+</div>
+<div style="display:flex;gap:12px;flex-wrap:wrap">
+<a href="https://kingschat.online/user/ror" target="_blank" class="rhapsody-link primary">Follow @ROR on KingsChat</a>
+<a href="https://www.kingsch.at" target="_blank" class="rhapsody-link secondary">Download KingsChat &rarr;</a>
+</div>
+</div>
+<div class="rhap-kc-embed">
+<iframe src="https://kingschat.online/user/ror" title="Rhapsody of Realities on KingsChat" loading="lazy"></iframe>
+</div>
+</div>
+</section>
+
+<!-- APP DOWNLOADS -->
+<section class="rhap-apps reveal">
+<h2 class="section-title">Get the <span>Apps</span></h2>
+<div class="rhap-apps-grid">
+<div class="rhap-app-card">
+<div class="app-icon" style="background:linear-gradient(135deg,#1565C0,#1976D2)">&#128214;</div>
+<h4>Rhapsody of Realities</h4>
+<p>Daily devotional for Adults, Teens &amp; Kids in one app</p>
+<a href="https://rhapsodyofrealities.org" target="_blank" class="rhapsody-link primary" style="font-size:.8rem;padding:10px 20px">Download Free</a>
+</div>
+<div class="rhap-app-card">
+<div class="app-icon" style="background:linear-gradient(135deg,#2E7D32,#43A047)">&#128172;</div>
+<h4>KingsChat</h4>
+<p>Christian social media &amp; messaging for believers worldwide</p>
+<a href="https://www.kingsch.at" target="_blank" class="rhapsody-link primary" style="font-size:.8rem;padding:10px 20px">Download Free</a>
+</div>
+<div class="rhap-app-card">
+<div class="app-icon" style="background:linear-gradient(135deg,#F57F17,#FFA000)">&#127912;</div>
+<h4>Lovetoons TV</h4>
+<p>Safe Christian kids entertainment, cartoons &amp; games</p>
+<a href="https://lovetoons.org" target="_blank" class="rhapsody-link primary" style="font-size:.8rem;padding:10px 20px">Watch Free</a>
+</div>
+<div class="rhap-app-card">
+<div class="app-icon" style="background:linear-gradient(135deg,#6A1B9A,#8E24AA)">&#128250;</div>
+<h4>LoveWorld SAT TV</h4>
+<p>7+ channels broadcasting the gospel 24/7 globally</p>
+<a href="https://www.loveworldsat.tv" target="_blank" class="rhapsody-link primary" style="font-size:.8rem;padding:10px 20px">Watch Free</a>
+</div>
+</div>
+</section>
+
+</div>
+
 <!-- LIGHTBOX (outside .page divs so position:fixed works) -->
 <div class="lightbox" id="lightbox" onclick="closeLightbox(event)" role="dialog" aria-modal="true" aria-label="Image viewer">
 <button class="lightbox-close" onclick="closeLightbox(event)" aria-label="Close image viewer">&times;</button>
@@ -1285,7 +1472,8 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 <ul>
 <li><a href="#home" onclick="switchPage('home')">Home</a></li>
 <li><a href="#about" onclick="switchPage('about')">About Us</a></li>
-<li><a href="https://rhapsodyofrealities.org" target="_blank">Rhapsody of Realities</a></li>
+<li><a href="#rhapsody" onclick="switchPage('rhapsody')">Rhapsody of Realities</a></li>
+<li><a href="https://kingschat.online" target="_blank">KingsChat</a></li>
 <li><a href="https://www.christembassycanada.org" target="_blank">CE Canada</a></li>
 </ul>
 </div>
@@ -1575,6 +1763,15 @@ setTimeout(function(){document.getElementById('lightboxImg').src='';},300);
 document.addEventListener('keydown',function(e){if(e.key==='Escape')closeLightbox();});
 window.openLightbox=openLightbox;
 window.closeLightbox=closeLightbox;
+
+// RHAPSODY TAB SWITCHING
+function switchRhapTab(tab,btn){
+document.querySelectorAll('.rhap-tab').forEach(function(t){t.classList.remove('active');});
+document.querySelectorAll('.rhap-tab-content').forEach(function(c){c.classList.remove('active');});
+document.getElementById('rhap-'+tab).classList.add('active');
+if(btn)btn.classList.add('active');
+}
+window.switchRhapTab=switchRhapTab;
 
 // FORM
 function submitForm(e){
